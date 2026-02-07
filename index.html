@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Happy Propose Day ❤️</title>
+
   <style>
     body {
       margin: 0;
@@ -14,27 +15,25 @@
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
-      overflow: hidden;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.2);
       padding: 40px;
       border-radius: 22px;
-      box-shadow: 0 0 35px rgba(255, 0, 120, 0.45);
       max-width: 650px;
+      box-shadow: 0 0 35px rgba(255, 0, 120, 0.5);
       animation: fadeIn 2s ease;
     }
 
     h1 {
       font-size: 2.7em;
-      margin-bottom: 10px;
     }
 
     h2 {
       font-size: 1.4em;
-      margin-bottom: 25px;
       font-weight: normal;
+      margin-bottom: 25px;
     }
 
     p {
@@ -45,13 +44,7 @@
     .heart {
       font-size: 3em;
       animation: beat 1s infinite;
-      margin: 18px 0;
-    }
-
-    .tap {
-      font-size: 0.9em;
-      opacity: 0.85;
-      margin-top: 15px;
+      margin: 20px 0;
     }
 
     @keyframes beat {
@@ -70,7 +63,7 @@
 
   <div class="card">
     <h1>💖 HAPPY PROPOSE DAY BETTU 💖</h1>
-    <h2>From Mannat to My Shambhavi 🥺❤️</h2>
+    <h2>From Mannat to My Shambhavi ❤️</h2>
 
     <div class="heart">❤️</div>
 
@@ -78,31 +71,27 @@
       Shambhavi,<br><br>
 
       From the moment you came into my life,<br>
-      everything started feeling warmer and brighter.<br><br>
+      everything started feeling more beautiful.<br><br>
 
-      We fight, we argue, we misunderstand…<br>
-      but still, we can never stay apart.<br><br>
-
-      I fall for you every single day,<br>
-      a little more than yesterday.<br><br>
+      We fight, we argue, but still we can’t stay apart.<br>
+      I fall for you every single day.<br><br>
 
       Will you always stay with me and be mine? 🌹
     </p>
 
     <div class="heart">🌹</div>
 
-    <p class="tap">👉 Tap anywhere to play our song 🎶</p>
+    <p style="font-size:0.9em;">👉 Tap anywhere to play our song 🎶</p>
 
     <!-- MUSIC -->
-    <audio id="bgMusic" loop>
+    <audio id="music" loop>
       <source src="song.mp3" type="audio/mpeg">
     </audio>
-
   </div>
 
   <script>
-    document.body.addEventListener('click', () => {
-      document.getElementById('bgMusic').play();
+    document.body.addEventListener("click", function () {
+      document.getElementById("music").play();
     }, { once: true });
   </script>
 
